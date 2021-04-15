@@ -9,8 +9,8 @@ BEGIN
  read(set1);
  read(set2);
      FOR i FROM 0 TO set1.length -1 STEP 1  DO
-       IF (htab.lookup(str[i]) = TRUE) THEN
-           count := htab.get(str[i]);
+       IF (htab.lookup(set1[i]) = TRUE) THEN
+           count := htab.get(set1[i]);
            htab.insert(set1[i],count+1);
        ELSE
            htab.insert(set2[i],1);
